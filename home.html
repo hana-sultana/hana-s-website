@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hana Sultana Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cec1e2;
+            color: #6804aa;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #A78FBF;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .navbar a:hover {
+            background-color: #9B80D4;
+        }
+        .content-section {
+            display: none;
+            padding: 20px;
+            margin: 10px;
+            background-color: #C8BFE7;
+            color: #000;
+            border-radius: 8px;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .header {
+            text-align: center;
+            margin: 0px 0;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2em;
+        }
+        h3 {
+            margin-top: 15px;
+        }
+        a {
+            color:#671ab8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+     
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Hana Sultana</h1>
+        <img src="hana.jpg" alt="image" width="100">
+    
+
+    </div>
+    <div class="header" style="text-align: center;">
+        <p>Houston, Texas | 832-322-6812 | <a href="mailto:hanasu929@gmail.com" style="color: #8e1564;">@hanasu929@gmail.com</a></p>
+    </div>
+    <div class="navbar">
+        <a onclick="showSection('education')">Education</a>
+        <a onclick="showSection('skills')">Technical Skills</a>
+        <a onclick="showSection('experience')">Experience</a>
+        <a onclick="showSection('research')">Research</a>
+        <a onclick="showSection('certifications')">Certifications</a>
+    </div>
+
+    <div id="education" class="content-section">
+        <h2>Education</h2>
+        <p><strong>Harmony School of Discovery - Senior</strong> | Graduation of 2025</p>
+        <p>Current GPA: 4.68/5.0</p>
+        <p>Github: <a href="https://github.com/Hana-sultana" target="_blank">Hana-sultana</a></p>
+    </div>
+
+    <div id="skills" class="content-section">
+        <h2>Technical Skills</h2>
+        <p><strong>Programming Languages:</strong> Java; HTML & CSS</p>
+        <p><strong>Tools & Technologies:</strong> GitHub, MySQL, JSON</p>
+    </div>
+
+    <div id="experience" class="content-section">
+        <h2>Professional & Technical Experience</h2>
+        <h3>NASA - Aviation Concept Design (2024 - Current)</h3>
+        <p>Proposed a prototype utilizing UAVs to combat desertification and contribute to global efforts addressing the UN's Sustainable Development Goals, specifically "Zero Hunger" and "Life on Land." Integrated Convolutional Neural Networks (CNNs) and regression techniques for environmental analysis.</p>
+        <h3>Rice University Internship (2024 - Current)</h3>
+        <p>Conducted statistical testing on distributed AI systems, analyzed data, and presented research at an international virtual conference in London.</p>
+        <h3>Stanford Physics Program (2024)</h3>
+        <p>Selected globally, worked on quantum physics projects using Python, and attended lectures on quantum computing applications in space.</p>
+        <h3>Code2College (2023 - Current)</h3>
+        <p>Took a 9-week programming course, developed projects using JSON files and MySQL, and taught Python fundamentals.</p>
+        <h3>Glaze (2024 - Current)</h3>
+        <p>Analyzed social media trends, worked with MIT graduates, and promoted a startup clothing website.</p>
+    </div>
+
+    <div id="research" class="content-section">
+        <h2>Research and Publications</h2>
+        
+        <h3>Examination of AI-Enhanced Distributed Systems and Their Effects on Software Engineering</h3>
+        <p><strong>2024 - 2024</strong></p>
+        <p>Research Link: <a href="https://docs.google.com/document/d/1_5wzOUTvX78hi08Slg9PgG9Il2t7dcsg7x7R7nhZ4VY/edit?usp=sharing" target="_blank">London International Conference</a></p>
+        <p>Investigated the impact of Artificial Intelligence (AI) on distributed systems in software engineering, evaluating benefits and drawbacks related to efficiency and security.</p>
+        <p>Analyzed AI's role in enhancing resource optimization, automating routine tasks, and simplifying complex processes within distributed systems.</p>
+        <p>Contributed to a comprehensive understanding of AI-enhanced distributed systems, informing strategies for optimal integration and management in software engineering.</p>
+        <p>This research was conducted as part of Rice University's Research Internship under Dr. Yetkin.</p>
+    
+        <h3>Soil Salinity Level Assessment and Prediction</h3>
+        <p><strong>2024 - 2024</strong></p>
+        <p>Research Link: <a href="https://ntrs.nasa.gov/api/citations/20240010634/downloads/20240010634_Team_4_Final_Report_final.pdf" target="_blank">NASA Report</a></p>
+        <p>Developed a system leveraging hyperspectral imaging, unmanned aerial vehicles (UAVs), and artificial intelligence (AI) to predict agricultural desertification risk and soil salinity levels.</p>
+        <p>Utilized convolutional neural networks (CNNs) and regression models to improve soil assessment and prediction techniques, addressing a significant gap in existing research.</p>
+        <p>Proposed a three-step approach – data collection, image analysis, and future prediction – to identify regions at risk of desertification, helping farmers mitigate agricultural loss and alleviate the global food crisis.</p>
+        <p>This research was conducted through NASA’s Aviation Concept Challenge as part of NASA’s internship program.</p>
+    
+        <h3>Driving Safer: AI Sensors to Reduce Car Accidents and Enhance Car Safety</h3>
+        <p><strong>2023 - 2024</strong></p>
+        <p>Research Link: <a href="https://docs.google.com/document/d/1_5wzOUTvX78hi08Slg9PgG9Il2t7dcsg7x7R7nhZ4VY/edit?usp=sharing" target="_blank">Research Paper</a></p>
+        <p>Evaluated the effectiveness of AI Sensors in reducing car accidents by simulating real-world collisions using proxy AI Sensors integrated into robotic models.</p>
+        <p>Presented research at Rice University’s international conference on 2/24/24.</p>
+    
+        <h3>Mental Health: Improving the Youth’s Mental Health in Our Society</h3>
+        <p><strong>2022 - 2023</strong></p>
+        <p>App Link: <a href="https://www.jotform.com/app/223004734846151" target="_blank">App for Mental Health</a></p>
+        <p>Educated youth about mental health disorders such as depression and anxiety through our app, which provides resources, tools, and support networks.</p>
+        <p>Developed a user-friendly application aimed at improving mental health by addressing common problems surrounding mental health in the community.</p>
+        <p>Research was presented at the school’s iSTEAM festival.</p>
+    </div>
+    
+
+    <div id="certifications" class="content-section">
+        <h2>Certifications and Honors</h2>
+        <p><strong>IT Specialist in Java (2024)</strong></p>
+        <p><strong>IT Specialist in HTML & CSS (2024)</strong></p>
+        <p><strong>Engineering Change Challenge: Travel - 1st Place (2024)</strong></p>
+    </div>
+</body>
+</html>
